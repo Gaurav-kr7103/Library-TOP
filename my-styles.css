@@ -1,0 +1,48 @@
+:root {
+    --fs-normal : 24px;
+    --fs-large : 30px;
+    --fs-heading : 50px;
+}
+* {
+    outline : 2px solid black;
+    padding : 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container > h1 {
+    text-shadow: 2px 2px;
+    text-align: center;
+    outline: transparent;
+    font-size: var(--fs-heading);
+}
+.container > .card-holder {
+    height: calc(100% - 60px);
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: rgb(174, 145, 145);
+}
+.container > .Buttons {
+    display: flex;
+    background-color: white;
+    height: 20px;
+    justify-content: space-evenly;
+    padding : 10px;
+}
+
+.container > div > .card {
+    height: 100px;
+    width : 100px;
+}
